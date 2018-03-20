@@ -23,7 +23,7 @@ JUnit5
             () -> assertNotNull("A String", "INCONCEIVABLE!"),
             () -> assertTrue(nullValue == null)
         );
-     }
+        }
 ---------------------------------------
 支持assertThrow，来对异常情况的用例做单元测试
 ---------------------------------------
@@ -33,7 +33,7 @@ JUnit5
     @DisplayName("Empty argument")
     public void testAdd_ZeroOperands_EmptyArgument() {
         long[] numbersToSum = {};
-        assertThrows(IllegalArgumentException.class, () -> classUnderTest.add(numbersToSum);
+        assertThrows(IllegalArgumentException.class, () -> classUnderTest.add(numbersToSum);
      }
 ---------------------------------------        
 支持assume对前置条件判断
