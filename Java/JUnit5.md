@@ -23,7 +23,7 @@ JUnit5
             () -> assertNotNull("A String", "INCONCEIVABLE!"),
             () -> assertTrue(nullValue == null)
         );
-        }
+     }
 ---------------------------------------
 支持assertThrow，来对异常情况的用例做单元测试
 ---------------------------------------
@@ -44,6 +44,6 @@ JUnit5
         LocalDateTime ldt = LocalDateTime.now();
         assumeTrue(ldt.getDayOfWeek().getValue() == 5);
         //Remainder of test (only executed if assumption holds)
-    }
+        }
 ---------------------------------------   
     
