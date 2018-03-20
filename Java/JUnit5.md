@@ -44,6 +44,6 @@ JUnit5
         LocalDateTime ldt = LocalDateTime.now();
         assumeTrue(ldt.getDayOfWeek().getValue() == 5);
         //Remainder of test (only executed if assumption holds)
-        }
+    }
 ---------------------------------------   
     
