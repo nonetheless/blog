@@ -24,6 +24,7 @@ JUnit5
             () -> assertTrue(nullValue == null)
         );
     }
+    
 支持assertThrow，来对异常情况的用例做单元测试
 ---------------------------------------
     import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -34,6 +35,7 @@ JUnit5
         long[] numbersToSum = {};
         assertThrows(IllegalArgumentException.class, () -> classUnderTest.add(numbersToSum));
     }
+    
 支持assume对前置条件判断
 ---------------------------------------
     @Test
@@ -43,3 +45,5 @@ JUnit5
         assumeTrue(ldt.getDayOfWeek().getValue() == 5);
         Remainder of test (only executed if assumption holds)...
     }
+    
+    
