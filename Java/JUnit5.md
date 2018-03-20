@@ -43,7 +43,7 @@ JUnit5
     public void testAdd_OnlyOnFriday() {
         LocalDateTime ldt = LocalDateTime.now();
         assumeTrue(ldt.getDayOfWeek().getValue() == 5);
-        //Remainder of test (only executed if assumption holds)
+        //Remainder of test (only executed if assumption holds)
         }
 ---------------------------------------   
     
