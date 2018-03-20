@@ -12,14 +12,15 @@ JUnit5
     @Test
     @DisplayName("Dummy test")
     void dummyTest() {
-    int expected = 4;
-    int actual = 2 + 2;
-    Object nullValue = null;
-    assertAll(
-    "Assert All of these",
-    () -> assertEquals(expected, actual, "INCONCEIVABLE!"),
-    () -> assertFalse(nullValue != null),
-    () -> assertNull(nullValue),
-    () -> assertNotNull("A String", "INCONCEIVABLE!"),
-    () -> assertTrue(nullValue == null));
+        int expected = 4;
+        int actual = 2 + 2;
+        Object nullValue = null;
+        assertAll(
+            "Assert All of these",
+            () -> assertEquals(expected, actual, "INCONCEIVABLE!"),
+            () -> assertFalse(nullValue != null),
+            () -> assertNull(nullValue),
+            () -> assertNotNull("A String", "INCONCEIVABLE!"),
+            () -> assertTrue(nullValue == null)
+        );
     }
