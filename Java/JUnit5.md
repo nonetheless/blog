@@ -7,18 +7,18 @@ JUnit5
 可以轻松定义不同的测试框架。只要一个框架实现了 TestEngine 接口，就可以将它插入任何支持 junit-platform-engine 和 junit-platform-launcher API 的工具中
 ### lamuda的支持
 新的Junit支持lamuda表达式，assertAll的方法可以批量执行判断，而且会全部执行完，不会在第一个断言失败后就停止判断。
-import static org.junit.jupiter.api.Assertions.assertAll;
-@Test
-@DisplayName("Dummy test")
-void dummyTest() {
+    import static org.junit.jupiter.api.Assertions.assertAll;
+    @Test
+    @DisplayName("Dummy test")
+    void dummyTest() {
     int expected = 4;
     int actual = 2 + 2;
     Object nullValue = null;
     assertAll(
-        "Assert All of these",
-        () -> assertEquals(expected, actual, "INCONCEIVABLE!"),
-        () -> assertFalse(nullValue != null),
-        () -> assertNull(nullValue),
-        () -> assertNotNull("A String", "INCONCEIVABLE!"),
-        () -> assertTrue(nullValue == null));
-}
+    "Assert All of these",
+    () -> assertEquals(expected, actual, "INCONCEIVABLE!"),
+    () -> assertFalse(nullValue != null),
+    () -> assertNull(nullValue),
+    () -> assertNotNull("A String", "INCONCEIVABLE!"),
+    () -> assertTrue(nullValue == null));
+    }
